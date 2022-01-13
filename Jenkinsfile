@@ -44,7 +44,6 @@ pipeline {
                 dir ('/home/pablo/Escritorio/Diplomado-DevOps/Proyectos/ejemplo-maven') {
                     script {
                         sh "JENKINS_NODE_COOKIE=dontKillMe nohup bash mvnw spring-boot:run &"
-			sh "funciona CTM!"
                     }
                 }    
             }
