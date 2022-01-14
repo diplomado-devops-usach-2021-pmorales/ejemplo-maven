@@ -20,7 +20,7 @@ import com.google.gson.Gson;
 @RequestMapping(path = "/rest/mscovid")
 public class RestData {
 	
-	private final static Logger LOGGER = Logger.getLogger("devops.subnivel.Control");
+	private static final Logger LOGGER = Logger.getLogger("devops.subnivel.Control");
 
 	
 	@GetMapping(path = "/test", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -83,3 +83,8 @@ public class RestData {
 		return response;		
 	}
 }
+
+//Esta es una linea comentada
+//Para pasar el Quality Gates
+//Taller 7
+//Diplomado DevOps
