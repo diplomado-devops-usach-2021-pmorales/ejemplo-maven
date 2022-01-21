@@ -57,10 +57,4 @@
 		<directory>build</directory>
 	</build>
 
-	<distributionManagement>
-		<repository>
-			<id>taller-nexus</id>
-			<name>taller-nexus</name>
-			<url>http://localhost:8081/repository/taller-nexus/</url>
-		</repository>
-	</distributionManagement>	
+</project>
