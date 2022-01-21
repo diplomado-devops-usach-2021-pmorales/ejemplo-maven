@@ -57,14 +57,10 @@
 		<directory>build</directory>
 	</build>
 
-<<<<<<< HEAD
-=======
-	<repositories>
-    		<repository>
-      			<id>maven-group</id>
-      			<url>http://localhost:8081/repository/maven-group/</url>
-    		</repository>
-  	</repositories>
-
->>>>>>> 1b6e6c8db751327813617fa47f1dc1ec1b9571f0
-</project>
+	<distributionManagement>
+		<repository>
+			<id>taller-nexus</id>
+			<name>taller-nexus</name>
+			<url>http://localhost:8081/repository/taller-nexus/</url>
+		</repository>
+	</distributionManagement>	
