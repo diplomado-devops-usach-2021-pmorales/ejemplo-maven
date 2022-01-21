@@ -39,6 +39,16 @@ pipeline {
                 }    
             }
         }
+        stage('upload Nexus') {
+            steps {
+                script {
+                    def scannerHome = tool 'sonar-scanner';
+                    withSonarQubeEnv('sonarqube-server') { 
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.sources=src -Dsonar.java.binaries=."
+                    }
+                }
+            }    
+        }          
         stage('Run') {
             steps {
                 dir ('/home/pablo/Escritorio/Diplomado-DevOps/Proyectos/ejemplo-maven') {
