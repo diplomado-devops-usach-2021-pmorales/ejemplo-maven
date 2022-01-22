@@ -57,4 +57,12 @@
 		<directory>build</directory>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>test-repo</id>
+			<name>test-repo</name>
+			<url>http://localhost:8081/repository/test-repo/</url>
+		</repository>
+	</distributionManagement>
+
 </project>

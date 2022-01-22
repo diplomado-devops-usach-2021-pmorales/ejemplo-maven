@@ -1,0 +1,9 @@
+<settings>
+  <servers>
+    <server>
+      <id>test-repo</id>
+      <username>pablo</username>
+      <password>koba</password>
+    </server>
+  </servers>
+</settings>
